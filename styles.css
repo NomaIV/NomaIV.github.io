@@ -58,6 +58,7 @@ h3 {
     justify-content: space-around;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -74,6 +75,42 @@ h3 {
 
 .navbar li {
     pad: 10px;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar li {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        padding: 10px;
+    }
 }
 
 /* Body */
