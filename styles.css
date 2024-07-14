@@ -1,0 +1,144 @@
+/* Colors */
+:root {
+    --light-red: #ffcccc;
+    --light-blue: #b3c7ff;
+    --light-lavender: #e6e6fa;
+    --complement-blue: #6666cc;
+    --soft-pink: #ffcce6;
+    --soft-gray: #d3d3d3;
+    --background: linear-gradient(to right, #ffcccc, #b3c7ff, #e6e6fa);
+    --hover-bg: rgb(185, 185, 248);
+}
+
+/* Headings */
+h1 {
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, var(--light-red), var(--light-blue), var(--light-lavender));
+    width: 100%;
+}
+
+h1::content {
+    content: "";
+    background: linear-gradient(to right, red, blue, purple);
+    width: 100%;
+    transition: width 100ms;
+}
+
+h2 {
+    margin-top: 20px;
+    width: max-content;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    background: linear-gradient(to right, red, blue, purple);
+    border-radius: 100px;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 100ms;
+}
+
+h3 {
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+/* Navigation bar */
+.navbar ul {
+    list-style-type: none;
+    background-color: var(--background);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: var(--hover-bg);
+}
+
+.navbar li {
+    pad: 10px;
+}
+
+/* Body */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: var(--background);
+}
+
+/* Section style */
+section {
+    border-style: solid;
+    border-width: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-image: linear-gradient(to right, black, grey, green) 1;
+}
+
+/* ul */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* li */
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Contact Icon */
+.contact-icon {
+    font-size: 40px;
+    margin: 0 20px;
+}
+
+.contact-icon:hover {
+    color: black;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Back to Top */
+.back-to-top {
+    text-align: center !important;   
+}
+
+/* Custom style for footer */
+.custom-footer {
+    background: linear-gradient(to right, var(--light-red), var(--light-blue), var(--light-lavender));
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 50px;
+}
+
+/* Skills Badges Icon */
+.skills-badges-icon {
+    font-size: 40px;
+    margin: 0 20px;
+}
+
+.skills-badges-icon:hover {
+    color: black;
+}
